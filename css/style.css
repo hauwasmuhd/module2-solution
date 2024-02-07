@@ -1,1 +1,62 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Header styling */
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Main styling */
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+/* Section styling */
+section {
+    flex: 1;
+    margin-bottom: 20px; /* Adjust spacing between sections */
+    padding: 20px;
+}
+
+/* Title styling */
+.title {
+    background-color: #ffa500; /* Unique color for title background */
+    color: #fff;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+/* Media queries for responsive design */
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    /* Tablet view */
+    .section1, .section2 {
+        flex: 1;
+        width: 48%; /* Adjust width of sections */
+    }
+
+    .section3 {
+        width: 100%; /* Full width for section 3 */
+    }
+}
+
+@media screen and (max-width: 767px) {
+    /* Mobile view */
+    section {
+        width: 100%; /* Full width for all sections */
+    }
+}
 
